@@ -6,8 +6,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTshirt, faHeadSideMask } from '@fortawesome/free-solid-svg-icons'
 
 const Icon = ({ nama }) => {
-    if (nama === "fashion-anak") return <FontAwesomeIcon icon={faTshirt} className="mr-2" />
-    if (nama === "masker-kain") return <FontAwesomeIcon icon={faHeadSideMask} className="mr-2" />
+    if (nama === "fashion-anak")
+        return <FontAwesomeIcon icon={faTshirt} className="mr-2" />
+    if (nama === "masker-kain")
+        return <FontAwesomeIcon icon={faHeadSideMask} className="mr-2" />
     return <FontAwesomeIcon icon={faTshirt} className="mr-2" />
 }
 

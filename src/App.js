@@ -7,6 +7,7 @@ import React, { Component } from 'react'
 import { API_URL } from './utils/constants'
 import axios from 'axios'
 import Products from './components/Products';
+import Swal from 'sweetalert2'
 
 export default class App extends Component {
   constructor(props) {
@@ -14,7 +15,8 @@ export default class App extends Component {
 
     this.state = {
       barangs: [],
-      pilihKategori: 'fashion-anak'
+      pilihKategori: 'fashion-anak',
+      keranjangs: []
     }
   }
 
@@ -28,6 +30,30 @@ export default class App extends Component {
       .catch(error => {
         console.log(error);
       })
+
+    axios
+      .get(API_URL + "keranjangs")
+      .then(res => {
+        const keranjangs = res.data;
+        this.setState({ keranjangs });
+      })
+      .catch(error => {
+        console.log(error);
+      })
+  }
+
+  componentDidUpdate(prevState) {
+    if (this.state.keranjangs !== prevState.keranjangs) {
+      axios
+        .get(API_URL + "keranjangs")
+        .then(res => {
+          const keranjangs = res.data;
+          this.setState({ keranjangs });
+        })
+        .catch(error => {
+          console.log(error);
+        })
+    }
   }
 
   changeCategory = (value) => {
@@ -47,8 +73,64 @@ export default class App extends Component {
       })
   }
 
+  tambahKeranjang = (value) => {
+
+    axios
+      .get(API_URL + "keranjangs?product.id=" + value.id)
+      .then(res => {
+        if (res.data.length === 0) {
+          const keranjang = {
+            jumlah: 1,
+            total_harga: value.harga,
+            product: value
+          }
+
+          axios
+            .post(API_URL + "keranjangs", keranjang)
+            .then(res => {
+              Swal.fire({
+                position: 'top',
+                icon: 'success',
+                title: keranjang.product.nama + ' sukses ditambahkan',
+                showConfirmButton: false,
+                timer: 1500
+              })
+            })
+            .catch(error => {
+              console.log(error);
+            })
+        } else {
+          const keranjang = {
+            jumlah: res.data[0].jumlah + 1,
+            total_harga: res.data[0].total_harga + value.harga,
+            product: value
+          }
+
+          axios
+            .put(API_URL + "keranjangs/" + res.data[0].id, keranjang)
+            .then(res => {
+              Swal.fire({
+                position: 'top',
+                icon: 'success',
+                title: keranjang.product.nama + ' sukses ditambahkan',
+                showConfirmButton: false,
+                timer: 1500
+              })
+            })
+            .catch(error => {
+              console.log(error);
+            })
+        }
+      })
+      .catch(error => {
+        console.log(error);
+      })
+
+
+  }
+
   render() {
-    const { barangs, pilihKategori } = this.state
+    const { barangs, pilihKategori, keranjangs } = this.state
     return (
       <div className="App">
         <NavbarComponent />
@@ -64,11 +146,12 @@ export default class App extends Component {
                     <Products
                       key={barang.id}
                       barang={barang}
+                      tambahKeranjang={this.tambahKeranjang}
                     />
                   ))}
                 </Row>
               </Col>
-              <Result />
+              <Result keranjangs={keranjangs} />
             </Row>
           </Container>
         </div>
