@@ -193,42 +193,8 @@
   ],
   "keranjangs": [
     {
-      "jumlah": 4,
-      "total_harga": 320000,
-      "product": {
-        "id": 2,
-        "kode": "FA-02",
-        "nama": "Ammar Army",
-        "harga": 80000,
-        "is_ready": true,
-        "gambar": "army-ammar.jpeg",
-        "category": {
-          "id": 1,
-          "nama": "fashion-anak"
-        }
-      },
-      "id": 1
-    },
-    {
-      "jumlah": 3,
-      "total_harga": 285000,
-      "product": {
-        "id": 12,
-        "kode": "FA-03",
-        "nama": "Gamis Sherina Tosca",
-        "harga": 95000,
-        "is_ready": true,
-        "gambar": "gamis-tosca-anak.jpeg",
-        "category": {
-          "id": 1,
-          "nama": "fashion-anak"
-        }
-      },
-      "id": 2
-    },
-    {
-      "jumlah": 2,
-      "total_harga": 210000,
+      "jumlah": 1,
+      "total_harga": 105000,
       "product": {
         "id": 14,
         "kode": "FA-05",
@@ -241,24 +207,24 @@
           "nama": "fashion-anak"
         }
       },
-      "id": 3
+      "id": 1
     },
     {
       "jumlah": 2,
       "total_harga": 45000,
       "product": {
-        "id": 3,
-        "kode": "MK-01",
-        "nama": "Genki Black Series",
+        "id": 8,
+        "kode": "MK-06",
+        "nama": "Genki Purple Series",
         "harga": 22500,
         "is_ready": true,
-        "gambar": "black-series.jpeg",
+        "gambar": "purple-series.jpeg",
         "category": {
           "id": 2,
           "nama": "masker-kain"
         }
       },
-      "id": 4
+      "id": 2
     }
   ],
   "pesanans": []
