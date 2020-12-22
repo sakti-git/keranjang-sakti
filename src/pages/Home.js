@@ -7,6 +7,7 @@ import { API_URL } from '../utils/constants'
 import axios from 'axios'
 import Products from '../components/Products';
 import Swal from 'sweetalert2'
+import { faGlassWhiskey } from '@fortawesome/free-solid-svg-icons';
 
 export default class App extends Component {
     constructor(props) {
@@ -30,6 +31,24 @@ export default class App extends Component {
                 console.log(error);
             })
 
+        this.getListKeranjang();
+    }
+
+    // componentDidUpdate(prevState) {
+    //     if (this.state.keranjangs !== prevState.keranjangs) {
+    //         axios
+    //             .get(API_URL + "keranjangs")
+    //             .then(res => {
+    //                 const keranjangs = res.data;
+    //                 this.setState({ keranjangs });
+    //             })
+    //             .catch(error => {
+    //                 console.log(error);
+    //             })
+    //     }
+    // }
+
+    getListKeranjang = () => {
         axios
             .get(API_URL + "keranjangs")
             .then(res => {
@@ -39,20 +58,6 @@ export default class App extends Component {
             .catch(error => {
                 console.log(error);
             })
-    }
-
-    componentDidUpdate(prevState) {
-        if (this.state.keranjangs !== prevState.keranjangs) {
-            axios
-                .get(API_URL + "keranjangs")
-                .then(res => {
-                    const keranjangs = res.data;
-                    this.setState({ keranjangs });
-                })
-                .catch(error => {
-                    console.log(error);
-                })
-        }
     }
 
     changeCategory = (value) => {
@@ -87,6 +92,7 @@ export default class App extends Component {
                     axios
                         .post(API_URL + "keranjangs", keranjang)
                         .then(res => {
+                            this.getListKeranjang();
                             Swal.fire({
                                 position: 'top',
                                 icon: 'success',
@@ -135,10 +141,10 @@ export default class App extends Component {
                 <Container fluid>
                     <Row>
                         <ListCategories changeCategory={this.changeCategory} pilihKategori={pilihKategori} />
-                        <Col>
+                        <Col className="mt-3">
                             <h4><strong>Daftar Produk</strong></h4>
                             <hr />
-                            <Row>
+                            <Row className="overflow-auto barang">
                                 {barangs && barangs.map((barang) => (
                                     <Products
                                         key={barang.id}
@@ -148,7 +154,7 @@ export default class App extends Component {
                                 ))}
                             </Row>
                         </Col>
-                        <Result keranjangs={keranjangs} {...this.props} />
+                        <Result keranjangs={keranjangs} {...this.props} getListKeranjang={this.getListKeranjang} />
                     </Row>
                 </Container>
             </div>

@@ -7,6 +7,10 @@
     {
       "id": 2,
       "nama": "masker-kain"
+    },
+    {
+      "id": 3,
+      "nama": "kaoskaki-anak"
     }
   ],
   "produks": [
@@ -189,43 +193,453 @@
         "id": 1,
         "nama": "fashion-anak"
       }
+    },
+    {
+      "id": 16,
+      "kode": "KA-01",
+      "nama": "Cup Cake Lovers",
+      "harga": 20000,
+      "is_ready": true,
+      "gambar": "CupCake Lovers.jpeg",
+      "category": {
+        "id": 3,
+        "nama": "kaoskaki-anak"
+      }
+    },
+    {
+      "id": 17,
+      "kode": "KA-02",
+      "nama": "Ethnic",
+      "harga": 20000,
+      "is_ready": true,
+      "gambar": "Ethnic 1.jpeg",
+      "category": {
+        "id": 3,
+        "nama": "kaoskaki-anak"
+      }
+    },
+    {
+      "id": 18,
+      "kode": "KA-03",
+      "nama": "Flower",
+      "harga": 20000,
+      "is_ready": true,
+      "gambar": "Flower 1.jpeg",
+      "category": {
+        "id": 3,
+        "nama": "kaoskaki-anak"
+      }
+    },
+    {
+      "id": 19,
+      "kode": "KA-04",
+      "nama": "Fruity Time",
+      "harga": 20000,
+      "is_ready": true,
+      "gambar": "Fruity Time.jpeg",
+      "category": {
+        "id": 3,
+        "nama": "kaoskaki-anak"
+      }
+    },
+    {
+      "id": 20,
+      "kode": "KA-05",
+      "nama": "Happy Tsum Tsum",
+      "harga": 20000,
+      "is_ready": true,
+      "gambar": "Happy Tsum2.jpeg",
+      "category": {
+        "id": 3,
+        "nama": "kaoskaki-anak"
+      }
+    },
+    {
+      "id": 21,
+      "kode": "KA-06",
+      "nama": "Hijab Story",
+      "harga": 20000,
+      "is_ready": true,
+      "gambar": "Hijab Story.jpeg",
+      "category": {
+        "id": 3,
+        "nama": "kaoskaki-anak"
+      }
+    },
+    {
+      "id": 22,
+      "kode": "KA-07",
+      "nama": "Hello Kitty",
+      "harga": 20000,
+      "is_ready": true,
+      "gambar": "Kitty 1.jpeg",
+      "category": {
+        "id": 3,
+        "nama": "kaoskaki-anak"
+      }
+    },
+    {
+      "id": 23,
+      "kode": "KA-08",
+      "nama": "My Melody",
+      "harga": 20000,
+      "is_ready": true,
+      "gambar": "Melody.jpeg",
+      "category": {
+        "id": 3,
+        "nama": "kaoskaki-anak"
+      }
+    },
+    {
+      "id": 24,
+      "kode": "KA-08",
+      "nama": "Minnie Queen",
+      "harga": 20000,
+      "is_ready": true,
+      "gambar": "Minnie Queen.jpeg",
+      "category": {
+        "id": 3,
+        "nama": "kaoskaki-anak"
+      }
     }
   ],
-  "keranjangs": [
+  "keranjangs": [],
+  "pesanans": [
     {
-      "jumlah": 1,
-      "total_harga": 105000,
-      "product": {
-        "id": 14,
-        "kode": "FA-05",
-        "nama": "Ameera Maroon Series",
-        "harga": 105000,
-        "is_ready": true,
-        "gambar": "maroon-ameera.jpeg",
-        "category": {
-          "id": 1,
-          "nama": "fashion-anak"
+      "total_bayar": 40000,
+      "menus": [
+        {
+          "jumlah": 1,
+          "total_harga": 20000,
+          "product": {
+            "id": 17,
+            "kode": "KA-02",
+            "nama": "Ethnic",
+            "harga": 20000,
+            "is_ready": true,
+            "gambar": "Ethnic 1.jpeg",
+            "category": {
+              "id": 3,
+              "nama": "kaoskaki-anak"
+            }
+          },
+          "id": 1
+        },
+        {
+          "jumlah": 1,
+          "total_harga": 20000,
+          "product": {
+            "id": 19,
+            "kode": "KA-04",
+            "nama": "Fruity Time",
+            "harga": 20000,
+            "is_ready": true,
+            "gambar": "Fruity Time.jpeg",
+            "category": {
+              "id": 3,
+              "nama": "kaoskaki-anak"
+            }
+          },
+          "id": 2
         }
-      },
+      ],
       "id": 1
     },
     {
-      "jumlah": 2,
-      "total_harga": 45000,
-      "product": {
-        "id": 8,
-        "kode": "MK-06",
-        "nama": "Genki Purple Series",
-        "harga": 22500,
-        "is_ready": true,
-        "gambar": "purple-series.jpeg",
-        "category": {
-          "id": 2,
-          "nama": "masker-kain"
+      "total_bayar": 365000,
+      "menus": [
+        {
+          "jumlah": 1,
+          "total_harga": 80000,
+          "product": {
+            "id": 2,
+            "kode": "FA-02",
+            "nama": "Ammar Army",
+            "harga": 80000,
+            "is_ready": true,
+            "gambar": "army-ammar.jpeg",
+            "category": {
+              "id": 1,
+              "nama": "fashion-anak"
+            }
+          },
+          "id": 1
+        },
+        {
+          "jumlah": 1,
+          "total_harga": 95000,
+          "product": {
+            "id": 12,
+            "kode": "FA-03",
+            "nama": "Gamis Sherina Tosca",
+            "harga": 95000,
+            "is_ready": true,
+            "gambar": "gamis-tosca-anak.jpeg",
+            "category": {
+              "id": 1,
+              "nama": "fashion-anak"
+            }
+          },
+          "id": 2
+        },
+        {
+          "jumlah": 2,
+          "total_harga": 190000,
+          "product": {
+            "id": 1,
+            "kode": "FA-01",
+            "nama": "Gamis Sherina Pink",
+            "harga": 95000,
+            "is_ready": true,
+            "gambar": "gamis-pink-anak.jpeg",
+            "category": {
+              "id": 1,
+              "nama": "fashion-anak"
+            }
+          },
+          "id": 3
         }
-      },
+      ],
       "id": 2
+    },
+    {
+      "total_bayar": 282500,
+      "menus": [
+        {
+          "jumlah": 2,
+          "total_harga": 40000,
+          "product": {
+            "id": 23,
+            "kode": "KA-08",
+            "nama": "My Melody",
+            "harga": 20000,
+            "is_ready": true,
+            "gambar": "Melody.jpeg",
+            "category": {
+              "id": 3,
+              "nama": "kaoskaki-anak"
+            }
+          },
+          "id": 11
+        },
+        {
+          "jumlah": 1,
+          "total_harga": 20000,
+          "product": {
+            "id": 22,
+            "kode": "KA-07",
+            "nama": "Hello Kitty",
+            "harga": 20000,
+            "is_ready": true,
+            "gambar": "Kitty 1.jpeg",
+            "category": {
+              "id": 3,
+              "nama": "kaoskaki-anak"
+            }
+          },
+          "id": 12
+        },
+        {
+          "jumlah": 1,
+          "total_harga": 95000,
+          "product": {
+            "id": 12,
+            "kode": "FA-03",
+            "nama": "Gamis Sherina Tosca",
+            "harga": 95000,
+            "is_ready": true,
+            "gambar": "gamis-tosca-anak.jpeg",
+            "category": {
+              "id": 1,
+              "nama": "fashion-anak"
+            }
+          },
+          "id": 14
+        },
+        {
+          "jumlah": 1,
+          "total_harga": 105000,
+          "product": {
+            "id": 14,
+            "kode": "FA-05",
+            "nama": "Ameera Maroon Series",
+            "harga": 105000,
+            "is_ready": true,
+            "gambar": "maroon-ameera.jpeg",
+            "category": {
+              "id": 1,
+              "nama": "fashion-anak"
+            }
+          },
+          "id": 15
+        },
+        {
+          "jumlah": 1,
+          "total_harga": 22500,
+          "product": {
+            "id": 9,
+            "kode": "MK-07",
+            "nama": "Genki Red Series",
+            "harga": 22500,
+            "is_ready": true,
+            "gambar": "red-series.jpeg",
+            "category": {
+              "id": 2,
+              "nama": "masker-kain"
+            }
+          },
+          "id": 16
+        }
+      ],
+      "id": 3
+    },
+    {
+      "total_bayar": 222500,
+      "menus": [
+        {
+          "jumlah": 1,
+          "total_harga": 95000,
+          "product": {
+            "id": 12,
+            "kode": "FA-03",
+            "nama": "Gamis Sherina Tosca",
+            "harga": 95000,
+            "is_ready": true,
+            "gambar": "gamis-tosca-anak.jpeg",
+            "category": {
+              "id": 1,
+              "nama": "fashion-anak"
+            }
+          },
+          "id": 14
+        },
+        {
+          "jumlah": 1,
+          "total_harga": 105000,
+          "product": {
+            "id": 14,
+            "kode": "FA-05",
+            "nama": "Ameera Maroon Series",
+            "harga": 105000,
+            "is_ready": true,
+            "gambar": "maroon-ameera.jpeg",
+            "category": {
+              "id": 1,
+              "nama": "fashion-anak"
+            }
+          },
+          "id": 15
+        },
+        {
+          "jumlah": 1,
+          "total_harga": 22500,
+          "product": {
+            "id": 9,
+            "kode": "MK-07",
+            "nama": "Genki Red Series",
+            "harga": 22500,
+            "is_ready": true,
+            "gambar": "red-series.jpeg",
+            "category": {
+              "id": 2,
+              "nama": "masker-kain"
+            }
+          },
+          "id": 16
+        }
+      ],
+      "id": 4
+    },
+    {
+      "total_bayar": 262500,
+      "menus": [
+        {
+          "jumlah": 1,
+          "total_harga": 95000,
+          "product": {
+            "id": 12,
+            "kode": "FA-03",
+            "nama": "Gamis Sherina Tosca",
+            "harga": 95000,
+            "is_ready": true,
+            "gambar": "gamis-tosca-anak.jpeg",
+            "category": {
+              "id": 1,
+              "nama": "fashion-anak"
+            }
+          },
+          "id": 1
+        },
+        {
+          "jumlah": 1,
+          "total_harga": 105000,
+          "product": {
+            "id": 14,
+            "kode": "FA-05",
+            "nama": "Ameera Maroon Series",
+            "harga": 105000,
+            "is_ready": true,
+            "gambar": "maroon-ameera.jpeg",
+            "category": {
+              "id": 1,
+              "nama": "fashion-anak"
+            }
+          },
+          "id": 2
+        },
+        {
+          "jumlah": 1,
+          "total_harga": 22500,
+          "product": {
+            "id": 7,
+            "kode": "MK-05",
+            "nama": "Genki Pink Series",
+            "harga": 22500,
+            "is_ready": true,
+            "gambar": "pink-series.jpeg",
+            "category": {
+              "id": 2,
+              "nama": "masker-kain"
+            }
+          },
+          "id": 3
+        },
+        {
+          "jumlah": 1,
+          "total_harga": 20000,
+          "product": {
+            "id": 22,
+            "kode": "KA-07",
+            "nama": "Hello Kitty",
+            "harga": 20000,
+            "is_ready": true,
+            "gambar": "Kitty 1.jpeg",
+            "category": {
+              "id": 3,
+              "nama": "kaoskaki-anak"
+            }
+          },
+          "id": 4
+        },
+        {
+          "jumlah": 1,
+          "total_harga": 20000,
+          "product": {
+            "id": 24,
+            "kode": "KA-08",
+            "nama": "Minnie Queen",
+            "harga": 20000,
+            "is_ready": true,
+            "gambar": "Minnie Queen.jpeg",
+            "category": {
+              "id": 3,
+              "nama": "kaoskaki-anak"
+            }
+          },
+          "id": 5
+        }
+      ],
+      "id": 5
     }
-  ],
-  "pesanans": []
+  ]
 }

@@ -28,7 +28,7 @@ export default class Sukses extends Component {
         return (
             <div className="mt-4 text-center">
                 <Image src="assets/images/sukses.png" width="500" />
-                <h2>Sukses Pesan</h2>
+                <h2 className="mt-4">Sukses Pesan</h2>
                 <p>Terima Kasih sudah memesan !</p>
                 <Button variant="primary" as={Link} to="/">
                     Kembali

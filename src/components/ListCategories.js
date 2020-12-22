@@ -3,13 +3,15 @@ import { Col, ListGroup } from 'react-bootstrap'
 import axios from 'axios'
 import { API_URL } from '../utils/constants'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faTshirt, faHeadSideMask } from '@fortawesome/free-solid-svg-icons'
+import { faTshirt, faHeadSideMask, faSocks } from '@fortawesome/free-solid-svg-icons'
 
 const Icon = ({ nama }) => {
     if (nama === "fashion-anak")
         return <FontAwesomeIcon icon={faTshirt} className="mr-2" />
     if (nama === "masker-kain")
         return <FontAwesomeIcon icon={faHeadSideMask} className="mr-2" />
+    if (nama === "kaoskaki-anak")
+        return <FontAwesomeIcon icon={faSocks} className="mr-2" />
     return <FontAwesomeIcon icon={faTshirt} className="mr-2" />
 }
 
@@ -39,7 +41,7 @@ export default class ListCategories extends Component {
         const { categories } = this.state;
         const { changeCategory, pilihKategori } = this.props;
         return (
-            <Col md={2} mt-2>
+            <Col md={2} className="mt-3">
                 <h4><strong>Daftar Kategori</strong></h4>
                 <hr />
                 <ListGroup>

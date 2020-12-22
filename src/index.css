@@ -3,6 +3,7 @@ body {
   font-family: 'Nunito Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: url(./background.png);
 }
 
 .navbar {
@@ -17,6 +18,20 @@ body {
 .btn-primary {
   background-color: teal;
   color: white;
+}
+
+@media only screen and (max-height: 1000px) {
+  .result {
+    height: 505px;
+  }
+
+  .barang {
+    height: 635px;
+  }
+}
+
+.overflow-auto::-webkit-scrollbar {
+  display: none;
 }
 
 code {
